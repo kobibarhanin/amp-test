@@ -23,3 +23,9 @@ model Partner {
   id        String   @id @default(cuid())
   updatedAt DateTime @updatedAt
 }
+
+model Customer {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
